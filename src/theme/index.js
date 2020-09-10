@@ -18,6 +18,12 @@ export default {
 				"type": "max-width",
 				"value": 992
 			}
+		],
+		"compmini": [
+			{
+				"type": "max-width",
+				"value": "1100"
+			}
 		]
 	},
 	"color": {

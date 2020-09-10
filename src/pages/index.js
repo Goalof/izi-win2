@@ -71,6 +71,8 @@ export default (() => {
 							lg-right="0px"
 							lg-background="#181818"
 							lg-box-shadow="0px 5px 15px rgba(19, 32, 38, 0.1)"
+							sm-height="100vh"
+							lg-height="100vh"
 						>
 							<Override slot="item-404" display="none" />
 							<Override
@@ -123,7 +125,7 @@ export default (() => {
 		</Section>
 		<Section
 			background="#181818"
-			padding="24px 0 800px 0"
+			padding="24px 0 750px 0"
 			position="relative"
 			lg-padding="24px 0 400px 0"
 			sm-padding="50px 0 368px 0"
@@ -135,7 +137,7 @@ export default (() => {
 				position="absolute"
 				left="0px"
 				z-index="2"
-				background="linear-gradient(180deg,rgba(0, 119, 204, 0) 0%,rgba(24, 24, 24, 0.87) 100%) 0 0 no-repeat"
+				background="linear-gradient(180deg,rgba(0, 119, 204, 0) 0%,rgba(24, 24, 24, 0.57) 100%) 0 0 no-repeat"
 			/>
 			<Stack>
 				{"    "}
@@ -265,16 +267,16 @@ export default (() => {
 							<Box position="relative">
 								<Image
 									loading="lazy"
-									width="696px"
+									width="100%"
 									src="https://uploads.quarkly.io/5f59fc4b0fb50e001fbe835e/images/Chat%20Bot.webp?v=2020-09-10T14:12:30.493Z"
 									md-width="100%"
 									lg-width="100%"
 								/>
 								<Components.Imagecrut
 									position="absolute"
-									bottom="302px"
+									bottom="151px"
 									height="191px"
-									left="61px"
+									left="68px"
 									right="auto"
 									top="auto"
 									width="190px"
@@ -294,16 +296,20 @@ export default (() => {
 									sm-left="26px"
 									sm-width="94px"
 									sm-height="94px"
+									compmini-bottom="302px"
+									compmini-left="49px"
+									compmini-right="auto"
+									compmini-top="auto"
 								/>
 								<Image
 									loading="lazy"
 									width="400px"
 									src="https://ukit.top/quarkly/3/features-image-2-2x.webp"
 									position="absolute"
-									bottom="121px"
+									bottom="100px"
 									height="275.375px"
 									left="auto"
-									right="-12px"
+									right="0px"
 									top="auto"
 									lg-bottom="-38px"
 									lg-left="auto"
@@ -320,9 +326,13 @@ export default (() => {
 									sm-width="150px"
 									sm-height="150px"
 									sm-top="auto"
-									sm-right="-49px"
-									sm-bottom="-63px"
+									sm-right="50px"
+									sm-bottom="-17px"
 									sm-left="auto"
+									compmini-bottom="125px"
+									compmini-left="auto"
+									compmini-right="0px"
+									compmini-top="auto"
 								/>
 							</Box>
 							{"    "}
@@ -374,9 +384,10 @@ export default (() => {
 								<Text
 									font="normal 300 20px/30px --fontFamily-googleInter"
 									margin="0px 0px 20px 0px"
-									display="inline-block"
+									display="none"
 									color="#ffffff"
 									letter-spacing="0.1px"
+									lg-display="block"
 								>
 									A single source
 								</Text>
@@ -412,9 +423,10 @@ export default (() => {
 								<Text
 									font="normal 300 20px/30px --fontFamily-googleInter"
 									margin="0px 0px 20px 0px"
-									display="inline-block"
+									display="none"
 									color="#ffffff"
 									letter-spacing="0.1px"
+									lg-display="block"
 								>
 									Intuitive interface
 								</Text>
@@ -890,7 +902,7 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="149px"
 								object-fit="cover"
-								border-radius="20px"
+								border-radius="0px"
 								lg-border-radius="0px"
 							/>
 							{"    "}
