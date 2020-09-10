@@ -62,7 +62,7 @@ export default (() => {
 						<Override slot="link-sontact" color="#ffffff" />
 					</Menu>
 					<Components.BurgerMenu display="none" lg-display="block" lg-color="#ffffff">
-						<Override slot="icon,icon-close" category="fa" icon="FaAffiliatetheme" />
+						<Override slot="icon,icon-close" category="fa" icon="FaAngellist" />
 						<Override
 							slot="menu"
 							lg-position="absolute"
@@ -333,6 +333,7 @@ export default (() => {
 									compmini-left="auto"
 									compmini-right="0px"
 									compmini-top="auto"
+									filter="drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15))"
 								/>
 							</Box>
 							{"    "}
