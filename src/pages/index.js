@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Image, Button, Box, Text, Link } from "@quarkly/widgets";
+import { Theme, Image, Button, Text, Box, Link } from "@quarkly/widgets";
 import { Override, StackItem, Menu, Stack, Section, GoogleMap, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
@@ -14,14 +14,20 @@ export default (() => {
 		>
 			<Stack>
 				{"    "}
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="center" />
+				<StackItem width="25%" display="flex" md-width="50%">
+					<Override
+						slot="StackItemContent"
+						align-items="center"
+						justify-content="center"
+						md-align-items="center"
+						md-justify-content="flex-start"
+					/>
 					{"        "}
 					<Image loading="lazy" width="163px" src="https://uploads.quarkly.io/5f59fc4b0fb50e001fbe835e/images/logo.svg?v=2020-09-10T15:12:31.702Z" />
 					{"    "}
 				</StackItem>
 				{"    "}
-				<StackItem width="50%" display="flex" lg-width="75%">
+				<StackItem width="50%" display="flex" lg-width="75%" md-width="50%">
 					<Override
 						slot="StackItemContent"
 						md-justify-content="flex-end"
@@ -50,7 +56,7 @@ export default (() => {
 						<Override
 							slot="item"
 							padding="6px 15px 6px 15px"
-							margin="0px 0px 0px 0px"
+							margin="0px 20px 0px 0px"
 							font="16px/24px --fontFamily-googleInter"
 							color="#ffffff"
 						/>
@@ -105,7 +111,7 @@ export default (() => {
 					{"    "}
 				</StackItem>
 				<StackItem width="25%" display="flex" lg-display="none">
-					<Override slot="StackItemContent" justify-content="flex-start" align-items="center" />
+					<Override slot="StackItemContent" justify-content="center" align-items="center" />
 					{"        "}
 					<Button
 						background="rgba(0, 119, 204, 0)"
@@ -131,15 +137,7 @@ export default (() => {
 			sm-padding="50px 0 368px 0"
 			md-padding="24px 0 300px5 0"
 		>
-			<Box
-				width="100%"
-				height="100%"
-				position="absolute"
-				left="0px"
-				z-index="2"
-				background="linear-gradient(180deg,rgba(0, 119, 204, 0) 0%,rgba(24, 24, 24, 0.57) 100%) 0 0 no-repeat"
-			/>
-			<Stack>
+			<Stack position="relative" z-index="3">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" />
@@ -208,7 +206,7 @@ export default (() => {
 			<Box
 				position="absolute"
 				top="calc(50% - 426.98px/2 + 76.72px)"
-				background="rgba(0, 0, 0, 0) url(https://ukit.top/quarkly/3/4-17-.webp) center/contain no-repeat scroll padding-box"
+				background="linear-gradient(0deg,#181818 0%,rgba(0,0,0,0) 100%),rgba(0, 0, 0, 0) url(https://ukit.top/quarkly/3/4-17-.webp) center 100%/contain no-repeat scroll padding-box"
 				height="700px"
 				left="0px"
 				lg-bottom="-247px"
@@ -239,7 +237,7 @@ export default (() => {
 			sm-padding="30px 0 80px 0"
 		>
 			<Override slot="SectionContent" max-width="1100px" sm-align-items="center" sm-justify-content="center" />
-			<Stack width="100%">
+			<Stack width="100%" gap="--cmp-stack-gap-small">
 				{"    "}
 				<StackItem width="100%" display="flex" lg-align-items="center" lg-justify-content="center">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" flex-direction="column" />
@@ -589,17 +587,17 @@ export default (() => {
 							<Text
 								background="#02E4C0"
 								font="600 17px/25px sans-serif"
-								width="155px"
+								width="148px"
 								margin="0px 0px 0px 0px"
 								padding="8px 0px 8px 0px"
 								text-align="center"
 								transform="rotate(45deg)"
 								position="absolute"
 								bottom="auto"
-								height="25px"
+								height="26px"
 								left="auto"
-								right="-37px"
-								top="19px"
+								right="-43px"
+								top="11px"
 								letter-spacing="0.2px"
 								lg-padding="5px 0px 4px 0px"
 								lg-top="16px"
@@ -808,7 +806,6 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="60px"
 								object-fit="cover"
-								border-radius="20px"
 							/>
 							{"    "}
 						</StackItem>
@@ -827,7 +824,6 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="60px"
 								object-fit="cover"
-								border-radius="20px"
 							/>
 							{"    "}
 						</StackItem>
@@ -846,7 +842,6 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="60px"
 								object-fit="cover"
-								border-radius="20px"
 							/>
 							{"    "}
 						</StackItem>
@@ -865,7 +860,6 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="71px"
 								object-fit="cover"
-								border-radius="20px"
 							/>
 							{"    "}
 						</StackItem>
@@ -884,7 +878,6 @@ export default (() => {
 								margin="0px 0px 44px 0px"
 								width="60px"
 								object-fit="cover"
-								border-radius="20px"
 							/>
 							{"    "}
 						</StackItem>
@@ -1400,6 +1393,7 @@ export default (() => {
 						text-align="left"
 						align-items="flex-start"
 						justify-content="flex-start"
+						margin="0px 0px 0px -7px"
 					>
 						<Override
 							slot="link"
