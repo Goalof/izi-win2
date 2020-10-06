@@ -1421,5 +1421,6 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
+		<Components.Metrika />
 	</Theme>;
 });
