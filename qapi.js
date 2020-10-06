@@ -50,5 +50,6 @@ export default {
 			"name": "About"
 		}
 	},
+	"mode": "production",
 	"projectType": "gatsby"
 }

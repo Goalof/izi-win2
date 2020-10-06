@@ -1,10 +1,19 @@
 import React from "react";
 import theme from "theme";
 import { Theme, Image, Button, Text, Box, Link } from "@quarkly/widgets";
+import { Helmet } from "react-helmet";
 import { Override, StackItem, Menu, Stack, Section, GoogleMap, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
+		<Helmet>
+			<title>
+				Quarkly export
+			</title>
+			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+		</Helmet>
+		<Components.EmbedHTML />
 		<Section
 			sm-height="90px"
 			sm-padding="18px 0 0px 0"
