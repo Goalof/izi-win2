@@ -179,7 +179,7 @@ export default (() => {
 					>
 						Most calendars are designed for teams. Slate is designed for{" "}
 						<br />
-						freelancers who want a simple way to plan their schedule.
+						freelancers who want a simple way to plan their schedule
 					</Text>
 					<Box sm-display="flex" sm-flex-direction="column">
 						<Button
